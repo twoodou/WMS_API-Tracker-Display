@@ -1,0 +1,408 @@
+.mono-container {	
+	display: block;
+	border: 2px solid black;
+	height: 300px;
+	width: 100%;
+}
+
+.patch {
+	height: 200px;
+    width: 200px;
+	background: url('http://api.optimum7.com/tweety/jonhartdesign/public/assets/pills/natural.png') center center no-repeat;
+}
+
+.mono_text {
+	text-align: center;
+	font-size: 27px;
+	font-family: "Times New Roman", serif;
+	line-height: 40px;
+	height: 50px;
+	white-space: nowrap;
+	text-shadow: 0 0 0 #000;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#main {
+	border: 2px solid purple;
+}
+
+.gold {
+	color: rgba(230, 176, 49, 0.8);
+}
+
+.silver {
+	color: rgba(211, 210, 209, 0.8);
+}
+
+.firstLast{
+    position: relative;
+    top: 3px;
+}
+
+.trad {
+}
+
+.nat {
+	color: #a27f70;
+}
+
+.clicked {
+    opacity: .3;
+}
+
+#btCont {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+#goHome {
+    height: 100px;
+    width: 50%;
+}
+
+span {
+	font-size: 45px;
+	margin: 0 3px;
+	position: relative;
+	top: 6px;
+}
+
+
+/*---------------- FONTS -----------------*/
+
+
+/* Font Name: ICOMOON */
+
+
+@font-face {
+    font-family: "icomoon";
+    src: url('https://api.optimum7.com/tweety/jonhartdesign/public/assets/extracted/icomoon-4-10624938/fonts/icomoon.eot');
+    src: url('https://api.optimum7.com/tweety/jonhartdesign/public/assets/extracted/icomoon-4-10624938/fonts/icomoon.eot?#iefix') format("embedded-opentype"), url('https://api.optimum7.com/tweety/jonhartdesign/public/assets/extracted/icomoon-4-10624938/fonts/icomoon.woff') format("woff"), url('https://api.optimum7.com/tweety/jonhartdesign/public/assets/extracted/icomoon-4-10624938/fonts/icomoon.ttf') format("truetype"), url('https://api.optimum7.com/tweety/jonhartdesign/public/assets/extracted/icomoon-4-10624938/fonts/icomoon.svg#icomoon') format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/*---------------- STAMPS -----------------*/
+
+
+[class^="m_"]:before,
+[class*="m_"]:before {
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 50px;
+    line-height: 50px !important;
+    display: inline;
+}
+
+
+/* Stamp Name: DOLPHIN */
+
+.m_221:before {
+    content: "\e917";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: TOOL */
+
+.m_238:before {
+    content: "\e926";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: TOOL WITH SHELLS */
+
+.m_239:before {
+    content: "\e925";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: ARROW */
+
+.m_212:before {
+    content: "\e90f";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: BUMBLE BEE */
+
+.m_214:before {
+    content: "\e910";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: BUTTERFLY */
+
+.m_215:before {
+    content: "\e911";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: COWBOY BOOT */
+
+.m_216:before {
+    content: "\e912";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: COWBOY HAT */
+
+.m_217:before {
+    content: "\e913";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: CROSS */
+
+.m_218:before {
+    content: "\e914";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: CROWN */
+
+.m_219:before {
+    content: "\e915";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: FISH */
+
+.m_222:before {
+    content: "\e918";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: FLEUR DE LIS */
+
+.m_223:before {
+    content: "\e919";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: HEART */
+
+.m_224:before {
+    content: "\e91a";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: INFINITY */
+
+.m_225:before {
+    content: "\e91b";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: JON HART LOGO */
+
+.m_226:before {
+    content: "\e91c";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: KITE */
+
+.m_227:before {
+    content: "\e91d";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: OLD KEY */
+
+.m_228:before {
+    content: "\e91e";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: OWL */
+
+.m_229:before {
+    content: "\e91f";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: PEACE SIGN */
+
+.m_230:before {
+    content: "\e920";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: SHAMROCK */
+
+.m_231:before {
+    content: "\e921";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: SHELL */
+
+.m_232:before {
+    content: "\e922";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: TEXAS */
+
+.m_233:before {
+    content: "\e924";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: TEXAS STAR */
+
+.m_234:before {
+    content: "\e923";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: TEXAS CHRISTIAN UNIVERSITY */
+
+.m_307:before {
+    content: "\e902";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: TEXAS AM UNIVERSITY */
+
+.m_308:before {
+    content: "\e900";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: TEXAS TECH UNIVERSITY */
+
+.m_309:before {
+    content: "\e903";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: BAYLOR UNIVERSITY */
+
+.m_310:before {
+    content: "\e901";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: ALPHA CHI OMEGA */
+
+.m_312:before {
+    content: "\e904";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: ALPHA DELTA PI */
+
+.m_313:before {
+    content: "\e905";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: CHI OMEGA */
+
+.m_314:before {
+    content: "\e906";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: DEER HEAD */
+
+.m_220:before {
+    content: "\e916";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: SOUTHERN METHODIST UNIVERSITY */
+
+.m_332:before {
+    content: "\e908";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: ANCHOR */
+
+.m_213:before {
+    content: "\e90e";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: DELTA DELTA DELTA */
+
+.m_315:before {
+    content: "\e907";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: DELTA GAMMA */
+
+.m_316:before {
+    content: "\e908";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: KAPPA ALPHA THETA */
+
+.m_317:before {
+    content: "\e909";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: KAPPA DELTA */
+
+.m_318:before {
+    content: "\e90a";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: KAPPA KAPPA GAMMA */
+
+.m_319:before {
+    content: "\e90b";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: PI BETA PHI */
+
+.m_320:before {
+    content: "\e90c";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: ZETA TAU ALPHA */
+
+.m_321:before {
+    content: "\e90d";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: UNIVERSITY OF HOUSTON */
+
+.m_333:before {
+    content: "\e927";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: MISSISSIPPI STATE UNIVERSITY */
+
+.m_334:before {
+    content: "\e929";
+    font-family: "icomoon" !important;
+}
+
+/* Stamp Name: JH JON HART LOGO */
+
+.m_395:before {
+    content: "\e928";
+    font-family: "icomoon" !important;
+}
