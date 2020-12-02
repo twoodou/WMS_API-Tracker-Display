@@ -29,16 +29,14 @@ class HotStampPage extends Component {
 
   async changeWorkflowStatus(event) {
     event.preventDefault();
-    console.log(event.value);
     // this.setState({ isLoading: true });
-    // let url = "http://192.168.50.232:5000/workflow-sewing/" + event.value.assembly;
-    let url = 'http://localhost:5000/workflow/inspecting/' + event.value.orderNumber;
+    // let url = 'http://localhost:5000/workflow/inspecting/' + event.value.orderNumber;
+    let url = 'http://192.168.50.232:5000/workflow/inspecting/' + event.value.orderNumber;
 
     const request = new Request(url, { method: "PATCH", body: event.value });
     console.log(request);
 
     await fetch(request)
-      // .then(res => res.json())
       .then(async res => {
         console.log('Server Response: ');
         console.log(res);
@@ -130,34 +128,6 @@ class HotStampPage extends Component {
               <Button icon={<FormClose />} onClick={this.onClose} plain />
             </Box>
           </Layer>
-          // ):(
-          //   <Layer
-          //     position="top"
-          //     modal={false}
-          //     margin={{ vertical: "medium", horizontal: "small" }}
-          //     onEsc={this.onClose}
-          //     responsive={false}
-          //     plain
-          //   >
-          //     <Box
-          //       align="center"
-          //       direction="row"
-          //       gap="small"
-          //       justify="between"
-          //       round="medium"
-          //       elevation="medium"
-          //       pad={{ vertical: "xsmall", horizontal: "small" }}
-          //       margin={{top: 'large'}}
-          //       background="status-danger"
-          //     >
-          //       <Box align="center" direction="row" gap="xsmall">
-          //         <StatusGood size={'36px'} />
-          //   <Text>Ready to Scan</Text>
-          //       </Box>
-          //       <Button icon={<FormClose />} onClick={this.onClose} plain />
-          //     </Box>
-          //   </Layer>
-          // )
         )}
         <DigitalClock />
         <Anchor alignSelf={"center"}>Click to open log</Anchor>

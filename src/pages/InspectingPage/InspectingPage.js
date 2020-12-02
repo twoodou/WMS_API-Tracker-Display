@@ -19,7 +19,6 @@ class HotStampPage extends Component {
     this.onClose = this.onClose.bind(this);
     this.clearLoading = this.clearLoading.bind(this);
     this.resetForm = this.resetForm.bind(this);
-    // this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
       value: "test",
       open: false,
@@ -30,15 +29,13 @@ class HotStampPage extends Component {
   async changeWorkflowStatus(event) {
     event.preventDefault();
     console.log(event.value);
-    // this.setState({ isLoading: true });
-    // let url = "http://192.168.50.232:5000/workflow-sewing/" + event.value.assembly;
-    let url = 'http://localhost:5000/workflow/packaging/' + event.value.orderNumber;
+    // let url = 'http://localhost:5000/workflow/packaging/' + event.value.orderNumber;
+    let url = 'http://192.168.50.232:5000/workflow/packaging/' + event.value.orderNumber;
 
     const request = new Request(url, { method: "PATCH", body: event.value });
     console.log(request);
 
     await fetch(request)
-      // .then(res => res.json())
       .then(async res => {
         console.log('Server Response: ');
         console.log(res);

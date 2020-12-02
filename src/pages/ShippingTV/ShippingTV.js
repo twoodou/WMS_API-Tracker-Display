@@ -34,7 +34,7 @@ class ShippingTVPage extends Component {
       beginDate: '',
       endDate: '',
       dates: {},
-      testNum: 25,
+      progress: 0,
     };
   }
 
@@ -94,7 +94,7 @@ class ShippingTVPage extends Component {
     var numBoxes = 0;
     var upsTotal = 0;
     var fedexTotal = 0;
-    var nmTotal = 0;
+    // var nmTotal = 0;
 
     for (let i = 0; i < data.length; i++) {
       numBoxes += data[i].PackNumber;
@@ -113,7 +113,8 @@ class ShippingTVPage extends Component {
       totalBoxes: numBoxes,
       totalUPS: upsTotal,
       totalFedEx: fedexTotal,
-      totalNM: nmTotal
+      progress: (numBoxes/200*100),
+      // totalNM: nmTotal
     });
     this.clearLoading();
   }
@@ -178,7 +179,6 @@ class ShippingTVPage extends Component {
           { name: "total", start: [0, 0], end: [1, 0] },
           { name: "UPS", start: [0, 1], end: [0, 1] },
           { name: "fedEx", start: [1, 1], end: [1, 1] },
-          // { name: "nm", start: [0, 2], end: [1, 2] }
           { name: "nm", start: [0, 2], end: [1, 2] }
         ]}
       >
@@ -225,7 +225,7 @@ class ShippingTVPage extends Component {
           </Heading>
         </Box>
         <Box fill gridArea="nm" background="light-2">
-          <BarMeter percent={this.state.testNum}/>
+          <BarMeter percent={this.state.progress}/>
           {/* <Heading
             size={"large"}
             level={2}
