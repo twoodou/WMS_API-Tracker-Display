@@ -16,10 +16,10 @@ winston.configure({
 });
 
 const config = {
-  user: "sa",
-  password: "ACCTivate!MSSQL",
-  server: "192.168.50.9\\Acctivate",
-  database: "Acctivate$LIVE-JOHARTDESIGN",
+  user: "user",
+  password: "MSSQL",
+  server: "LOCAL.SERVER.IP\\SERVER",
+  database: "DATABASE",
   options: { encrypt: true },
   multipleStatements: true,
 };
@@ -92,10 +92,9 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
-// 1) Workflow Change Endpoints\/
+// 1) Workflow Change Endpoints\
 workflowIDs.forEach(function (i) {
   app.patch("/workflow/" + i.step + "/:id", (req, res) => {
-    // console.log('Changing ' + i.type + ' workflow status to: ' + i.step + ' for ID: '+ req.params.id);
 // =======================================================================
 // =======================================================================
     // 1.A) WORK ORDER (Prod Assembly) Routes
@@ -307,8 +306,6 @@ app.post("/packageScan", (req, res) => {
 });
 
 app.get("/packcamlog", (req, res) => {
-  // var orderLog = fs.readFile('./packScans.txt');
-  // res.send(orderLog);
 
   const orderLog = fs.readFile("./packScans.txt", (err, data) => {
     if (err) throw err;
